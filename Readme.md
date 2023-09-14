@@ -26,6 +26,8 @@
 
 This project uses the NuBot rescue robot as the platform and obstacles crossing as the task. It builds a reinforcement learning training system in Isaac Sim and implements commonly used reinforcement learning algorithms.
 
+![](docs/images/out.gif)
+
 # Install
 
 ## Isaac Sim
