@@ -1,0 +1,50 @@
+#!/bin/bash
+
+while getopts ":a:s:" opt; do
+  case $opt in
+    a)
+      algo=$(echo "$OPTARG" | tr '[:lower:]' '[:upper:]')
+      ;;
+    s)
+      asset="$OPTARG"
+      ;;
+    \?)
+      echo "Invalud option; -$OPTARG"
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument."
+      ;;
+  esac
+done
+
+action_mode='continuous_std_6'
+#action_mode='discrete_std_6'
+
+asset_name_map="
+batten batten             \n
+flat flatland             \n
+plum plum_blossom_pile    \n
+sup stairs_up             \n
+sdown stairs_down         \n
+"
+
+asset_path=$(echo -e $asset_name_map | grep "$asset" | awk '{print $2}')
+
+e_dir=runs/BM_${asset}_${algo}_$(date +'%m%d')
+
+rm -r ${e_dir}
+
+~/.local/share/ov/pkg/isaac_sim-*/python.sh \
+    scripts/train_sarl.py \
+    task='Benchmark' \
+    train="BM_${algo}" \
+    max_iterations=3000 \
+    headless=True \
+    asset="./assets/config/benchmark_${asset_path}.yaml" \
+    task.env.actionMode="$action_mode" \
+    test=False \
+    rl_device=cpu \
+    sim_device=cpu \
+    experiment=${e_dir}
+
+

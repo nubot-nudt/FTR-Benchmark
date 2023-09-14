@@ -1,0 +1,48 @@
+params:
+  seed: ${...seed}
+
+  algo:
+    name: ppo
+
+  load_checkpoint: ${if:${...checkpoint},True,False} # flag which sets whether to load the checkpoint
+  load_path: ${...checkpoint} # path to the checkpoint to load
+
+  config:
+    name: ${resolve_default:Hier,${....experiment}}
+
+  policy: # only works for MlpPolicy right now
+    pi_hid_sizes: [ 1024, 1024, 512 ]
+    vf_hid_sizes: [ 1024, 1024, 512 ]
+    activation: elu # can be elu, relu, selu, crelu, lrelu, tanh, sigmoid
+
+  learn:
+    agent_name: ${resolve_default:BM,${....experiment}}
+    full_experiment_name: ${....experiment}
+    device: ${....rl_device}
+    device_name: ${....rl_device}
+
+    test: ${resolve_default:False,${....test}}
+    resume: 0
+    save_interval: 100 # check for potential saves every this many iterations
+    print_log: True
+
+    # rollout params
+    max_iterations: 6500
+
+    # training params
+    cliprange: 0.2
+    ent_coef: 0
+    nsteps: 8
+    noptepochs: 5
+    nminibatches: 4 # this is per agent
+    max_grad_norm: 1
+    optim_stepsize: 3.e-4 # 3e-4 is default for single agent training with constant schedule
+    schedule: adaptive # could be adaptive or linear or fixed
+    desired_kl: 0.016
+    gamma: 0.995
+    lam: 0.95
+    init_noise_std: 0.8
+
+    log_interval: 1
+    asymmetric: False
+

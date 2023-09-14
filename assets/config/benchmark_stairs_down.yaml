@@ -1,0 +1,25 @@
+name: benchmark_stairs_down
+robot:
+  path: assets/usd/pumbaa/*.usd
+  position: [3, 0, 0.2]
+  orient: [0, 0, 0, 1]
+  scale: [1, 1, 1]
+
+obstacle:
+  path: assets/usd/obstacle/terrain_stairs_2.usd
+  position: [-1.5, -2, 0]
+  orient: [1, 0, 0, 0]
+  scale: [1, 4.5, 1]
+
+  ground:
+    path: assets/usd/obstacle/ground.usd
+
+map:
+  path: assets/map/benchmark_stairs_down.map
+  lower: [-10, -10, 0]
+  upper: [10, 10, 2]
+  cell_size: 0.05
+
+
+
+

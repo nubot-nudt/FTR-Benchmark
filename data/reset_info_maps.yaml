@@ -1,0 +1,9 @@
+"plum-12.yaml": "data/start_target/plum"
+"train_map_01.yaml": "data/start_target/map01"
+"train_map_02.yaml": "data/start_target/map02"
+
+"benchmark_batten.yaml": "data/start_target/bm_batten"
+"benchmark_flatland.yaml": "data/start_target/bm_flat"
+"benchmark_plum_blossom_pile.yaml": "data/start_target/bm_plum"
+"benchmark_stairs_up.yaml": "data/start_target/bm_stairs_up"
+"benchmark_stairs_down.yaml": "data/start_target/bm_stairs_down"
