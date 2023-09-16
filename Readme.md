@@ -43,3 +43,13 @@ Execute the following code directly in the project root directory to start train
 ./shell/benchmark/train_args -a DDPG -s batten
 ```
 Among them, the -a parameter indicates the training algorithm, including PPO, SAC, TRPO, DDPG and TD3, and the -s parameter indicates the map file to be used, including batten, flat, plum, sdown and sup.
+
+# Supported RL algorithms are listed below:
+
+- [Proximal Policy Optimization (PPO)](https://arxiv.org/pdf/1707.06347.pdf)
+- [Trust Region Policy Optimization (TRPO)](https://arxiv.org/pdf/1502.05477.pdf)
+- [Twin Delayed DDPG (TD3)](https://arxiv.org/pdf/1802.09477.pdf)
+- [Soft Actor-Critic (SAC)](https://arxiv.org/pdf/1812.05905.pdf)
+- [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf)
+- [Dueling Double DQN (D3QN)](https://arxiv.org/pdf/1812.05905.pdf)
+
