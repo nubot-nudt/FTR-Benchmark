@@ -25,7 +25,7 @@ The simulation platform used in this project is Isaac Sim. The installation addr
 [download and install Isaac Sim](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_workstation.html)
 
 ## Python
-After Isaac Sim is installed successfully, there is a file named python.sh in its installation directory. This is a python that comes with Isaac Sim. First, you need to configure the built-in Python environment of Isaac Sim. Here, name this python isisaac-python. If you are using bash, then add the following code to the last line of **.bashrc**
+After Isaac Sim is installed successfully, there is a file named python.sh in its installation directory. This is a python that comes with Isaac Sim. First, you need to configure the built-in Python environment of Isaac Sim. Here, name this python isaac-python. If you are using bash, then add the following code to the last line of **.bashrc**
 
 ```shell
 alias 'isaac-python=~/.local/share/ov/pkg/isaac_sim-*/python.sh'
