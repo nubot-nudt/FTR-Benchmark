@@ -55,3 +55,15 @@ Among them, the -a parameter indicates the training algorithm, including PPO, SA
 - [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf)
 - [Dueling Double DQN (D3QN)](https://arxiv.org/pdf/1812.05905.pdf)
 
+# Research papers published using FTR-Bench
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- Research paper
+  - [Geometry-Based Flipper Motion Planning for Articulated Tracked Robots Traversing Rough Terrain in Real-time](https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22236): Journal of Field Robotics, 2023,  https://doi.org/10.1002/rob.22236.
+  - [Deep Reinforcement Learning for Flipper Control of Tracked Robots](https://arxiv.org/abs/2306.10352): ArXiv 2023, https://doi.org/10.48550/arXiv.2306.10352.
+<details close>
+
+
+
