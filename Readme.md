@@ -4,7 +4,7 @@
  | |__     | |  | |__) |_____| |_) | ___ _ __   ___| |__  
  |  __|    | |  |  _  /______|  _ < / _ \ '_ \ / __| '_ \ 
  | |       | |  | | \ \      | |_) |  __/ | | | (__| | | |
- |_|       |_|  |_|  \_\     |____/ \___|_| |_|\___|_| |_|                                                                       
+ |_|       |_|  |_|  \_\     |____/ \___|_| |_|\___|_| |_| 
 ```
 
 # Introduce
@@ -12,6 +12,14 @@
 This project uses the NuBot rescue robot as the platform and obstacles crossing as the task. It builds a reinforcement learning training system in Isaac Sim and implements commonly used reinforcement learning algorithms.
 
 ![](docs/images/out.gif)
+
+The core objective of FTR-Bench is to establish a learning framework that enables the articulated tracked robot to navigate obstacles in various terrains. Specifically, FTR-Bench consists of three primary components: the simulation, tasks, and learning algorithms.
+
+![](./docs/images/frame.jpg)
+
+The flipper tracked robots have the capability to learn in various terrains. Considering real-world rescue robot applications, we have created four types of terrains, including flat ground, obstacles, bollards, and stairs. The task defines the conditions and objectives that the tracked robots need to meet in each scenario.
+
+Eventually, our experiments demonstrate that RL can facilitate the robots to achieve some remarkable performance on such challenging tasks, enabling the agent to learn the optimal obstacle-navigation strategies within the environment. And there is still some room for improvement and more difficult tasks for future work.
 
 # Install
 
@@ -21,7 +29,7 @@ The simulation platform used in this project is Isaac Sim. The installation addr
 [download and install Isaac Sim](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_workstation.html)
 
 ## Python
-After Isaac Sim is installed successfully, there is a file named python.sh in its installation directory. This is a python that comes with Isaac Sim. First, you need to configure the built-in Python environment of Isaac Sim. Here, name this python isaac-python. If you are using bash, then add the following code to the last line of **.bashrc**
+After Isaac Sim is installed successfully, there is a file named **python.sh** in its installation directory. This is a python that comes with Isaac Sim. First, you need to configure the built-in Python environment of Isaac Sim. Here, name this python **isaac-python**. If you are using bash, then add the following code to the last line of **.bashrc**
 
 ```shell
 alias 'isaac-python=~/.local/share/ov/pkg/isaac_sim-*/python.sh'
@@ -37,7 +45,13 @@ Related dependencies github
 
 # Train
 
-Execute the following code directly in the project root directory to start training
+To start training, you can execute the following code
+
+~~~shell
+isaac-python scripts/train_sarl.py task=Benchmark train=BM_PPO rl_device=cpu
+~~~
+
+Alternatively, you can execute the following code directly in the project root directory to start training
 
 ```shell
 ./shell/benchmark/train_args -a DDPG -s batten
