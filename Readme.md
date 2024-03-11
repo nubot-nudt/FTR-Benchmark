@@ -11,7 +11,9 @@
 
 This project uses the NuBot rescue robot as the platform and obstacles crossing as the task. It builds a reinforcement learning training system in Isaac Sim and implements commonly used reinforcement learning algorithms.
 
-![](docs/images/out.gif)
+![](docs/images/train_parallel.gif)
+
+![](docs/images/cross_batten.gif)
 
 The core objective of FTR-Bench is to establish a learning framework that enables the articulated tracked robot to navigate obstacles in various terrains. Specifically, FTR-Bench consists of three primary components: the simulation, tasks, and learning algorithms.
 
@@ -37,7 +39,7 @@ alias 'isaac-python=~/.local/share/ov/pkg/isaac_sim-*/python.sh'
 ## Install dependencies
 
 ```shell
-isaac-python -m pip install -r requirements.txt
+isaac-python -m pip install -r scripts/requirements.txt
 ```
 Related dependencies github
 * [rl-games](https://github.com/Denys88/rl_games)
@@ -48,15 +50,14 @@ Related dependencies github
 To start training, you can execute the following code
 
 ~~~shell
-isaac-python scripts/train_sarl.py task=Benchmark train=BM_PPO rl_device=cpu
+isaac-python scripts/benchmark.py train sac steps 40
 ~~~
 
-Alternatively, you can execute the following code directly in the project root directory to start training
+If you want to test the training results, you can use the following command
 
-```shell
-./shell/benchmark/train_args -a DDPG -s batten
-```
-Among them, the -a parameter indicates the training algorithm, including PPO, SAC, TRPO, DDPG and TD3, and the -s parameter indicates the map file to be used, including batten, flat, plum, sdown and sup.
+~~~shell
+isaac-python scripts/benchmark.py play
+~~~
 
 # Supported RL algorithms are listed below:
 
