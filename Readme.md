@@ -15,7 +15,7 @@ This project uses the NuBot rescue robot as the platform and obstacles crossing 
 
 The core objective of FTR-Bench is to establish a learning framework that enables the articulated tracked robot to navigate obstacles in various terrains. Specifically, FTR-Bench consists of three primary components: the simulation, tasks, and learning algorithms.
 
-![](./docs/images/frame.jpg)
+![](./docs/images/framework.pdf)
 
 The flipper tracked robots have the capability to learn in various terrains. Considering real-world rescue robot applications, we have created four types of terrains, including flat ground, obstacles, bollards, and stairs. The task defines the conditions and objectives that the tracked robots need to meet in each scenario.
 
