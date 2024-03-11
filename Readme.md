@@ -34,6 +34,7 @@ Eventually, our experiments demonstrate that RL can facilitate the robots to ach
 |Up the Stairs| Simulate the tracked robot climbing stairs, with the successful completion of the task defined when the robot reaches the top of the stairs. | <img src="docs/images/tasks/sup_43.png" width="250"/>    |
 |Down the Stairs| Simulate the tracked robot descending stairs, with the successful completion of the task defined when the robot reaches the ground. | <img src="docs/images/tasks/sdown_43.png" width="250"/>    |
 |Mixed Terrain| Simulate the tracked robot navigating through various complex terrains, with the successful completion of the task defined when the robot reaches the specified endpoint. | <img src="docs/images/tasks/mixed_43.png" width="250"/>    |
+|Front Swing Arm Only| Simulate a scenario where one-directional articulation of the arm is disabled, and the obstacle traversal task is accomplished using only the arms in a single direction. | <img src="docs/images/tasks/task_only_front.png" width="250"/>    |
 
 
 # Install
