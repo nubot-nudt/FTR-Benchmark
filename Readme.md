@@ -81,6 +81,51 @@ isaac-python scripts/benchmark.py play
 - [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf)
 - [Dueling Double DQN (D3QN)](https://arxiv.org/pdf/1812.05905.pdf)
 
+# Enviroment Performance
+<table>
+    <tr>
+        <th colspan="2"> Drive on Flat Terrain</th>
+        <th colspan="2">Cross the Bar</th>
+    <tr>
+    <tr>
+        <td><img src="docs/images/tasks/flat_43.png" align="middle" width="600"/></td>
+        <td><img src="data/benchmark/flat.png" align="middle" width="900"/></td>
+        <td><img src="docs/images/tasks/batten_43.png" align="middle" width="600"/></td>
+        <td><img src="data/benchmark/batten.png" align="middle" width="900"/></td>
+    <tr>
+    <tr>
+        <th colspan="2"> Cross the Steps</th>
+        <th colspan="2">Drive on Plum Pile </th>
+    <tr>
+    <tr>
+        <td><img src="docs/images/tasks/steps_43.png" align="middle" width="600"/></td>
+        <td><img src="data/benchmark/steps.png" align="middle" width="900"/></td>
+        <td><img src="docs/images/tasks/plum_43.png" align="middle" width="600"/></td>
+        <td><img src="data/benchmark/plum.png" align="middle" width="900"/></td>
+    <tr>
+    <tr>
+        <th colspan="2"> Drive on Wave Terrain</th>
+        <th colspan="2">Up the Stairs </th>
+    <tr>
+    <tr>
+        <td><img src="docs/images/tasks/wave_43.png" align="middle" width="600"/></td>
+        <td><img src="data/benchmark/wave.png" align="middle" width="900"/></td>
+        <td><img src="docs/images/tasks/sup_43.png" align="middle" width="600"/></td>
+        <td><img src="data/benchmark/sup.png" align="middle" width="900"/></td>
+    <tr>
+    <tr>
+        <th colspan="2"> Down the Stairs</th>
+        <th colspan="2">Mixed Terrain </th>
+    <tr>
+    <tr>
+        <td><img src="docs/images/tasks/sdown_43.png" align="middle" width="600"/></td>
+        <td><img src="data/benchmark/sdown.png" align="middle" width="900"/></td>
+        <td><img src="docs/images/tasks/mixed_43.png" align="middle" width="600"/></td>
+        <td><img src="data/benchmark/mixed.png" align="middle" width="900"/></td>
+    <tr>
+    
+</table>
+
 # Research papers published using FTR-Bench
 
 <details open>
