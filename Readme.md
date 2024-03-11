@@ -1,11 +1,12 @@
-```
+<!-- ```
   ______ _______ _____        ____                  _     
  |  ____|__   __|  __ \      |  _ \                | |    
  | |__     | |  | |__) |_____| |_) | ___ _ __   ___| |__  
  |  __|    | |  |  _  /______|  _ < / _ \ '_ \ / __| '_ \ 
  | |       | |  | | \ \      | |_) |  __/ | | | (__| | | |
  |_|       |_|  |_|  \_\     |____/ \___|_| |_|\___|_| |_| 
-```
+``` -->
+![](docs/images/github_title.png)
 
 # Introduce
 
@@ -58,6 +59,7 @@ isaac-python -m pip install -r scripts/requirements.txt
 Related dependencies github
 * [rl-games](https://github.com/Denys88/rl_games)
 * [omniisaacgymenvs](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs)
+
 
 # Train
 
