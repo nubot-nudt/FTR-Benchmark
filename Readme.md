@@ -37,7 +37,7 @@ alias 'isaac-python=~/.local/share/ov/pkg/isaac_sim-*/python.sh'
 ## Install dependencies
 
 ```shell
-isaac-python -m pip install -r requirements_isaac.txt
+isaac-python -m pip install -r requirements.txt
 ```
 Related dependencies github
 * [rl-games](https://github.com/Denys88/rl_games)

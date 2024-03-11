@@ -1,0 +1,17 @@
+
+robot:
+  path: assets/usd/pumbaa/*.usd
+  position: [2, 0, 0.1]
+  orient: [0, 0, 0, 1]
+  scale: [1, 1, 1]
+
+obstacle:
+  path: assets/usd/obstacle/mixed.usd
+  position: [ 0, 0, 0 ]
+  scale: [ 1, 1, 1 ]
+
+map:
+
+  lower: [-14, -8, -0.1]
+  upper: [10, 8, 2]
+  cell_size: 0.05

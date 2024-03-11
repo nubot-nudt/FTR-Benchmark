@@ -1,6 +1,0 @@
-#!/bin/bash
-
-for item in $(echo -e 'batten\nflat\nplum\nsup\nsdown')
-do
-  ./shell/benchmark/train_args -s ${item} -a $1
-done

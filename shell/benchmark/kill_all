@@ -1,4 +1,0 @@
-#!/bin/bash
-
-pkill train_args
-ps aux | grep train_sarl | grep -v grep | awk '{print $2}' | xargs kill -9

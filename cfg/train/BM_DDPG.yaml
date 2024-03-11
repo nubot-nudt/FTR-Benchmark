@@ -19,11 +19,11 @@ params:
     test: ${resolve_default:False,${....test}}
 
     resume: 0
-    save_interval: 100 # check for potential saves every this many iterations
+    save_interval: 500 # check for potential saves every this many iterations
     print_log: True
 
     # rollout params
-    max_iterations: 2500
+    max_iterations: 6000
 
     # training params
     hidden_nodes: 512

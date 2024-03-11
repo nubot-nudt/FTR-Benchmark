@@ -1,9 +1,22 @@
 "plum-12.yaml": "data/start_target/plum"
 "train_map_01.yaml": "data/start_target/map01"
 "train_map_02.yaml": "data/start_target/map02"
+"train_map_03.yaml": "data/start_target/map03"
 
 "benchmark_batten.yaml": "data/start_target/bm_batten"
-"benchmark_flatland.yaml": "data/start_target/bm_flat"
-"benchmark_plum_blossom_pile.yaml": "data/start_target/bm_plum"
-"benchmark_stairs_up.yaml": "data/start_target/bm_stairs_up"
-"benchmark_stairs_down.yaml": "data/start_target/bm_stairs_down"
+"benchmark_plum.yaml": "data/start_target/bm_plum"
+"benchmark_sup.yaml": "data/start_target/bm_stairs_up"
+"benchmark_sdown.yaml": "data/start_target/bm_stairs_down"
+
+"experiment_stairs.yaml": "data/start_target/exp_stairs"
+"experiment_step40.yaml": "data/start_target/exp_step40"
+
+"terrain_batten.yaml": "data/start_target/tr_batten"
+"terrain_steps.yaml": "data/start_target/tr_steps"
+"terrain_stair.yaml": "data/start_target/tr_stair"
+"terrain_wave.yaml": "data/start_target/tr_wave"
+
+"map_mixed.yaml": "data/start_target/mixed"
+"stairs_up_and_down.yaml": "data/start_target/stairs_sd"
+
+"terrain_mutil_batten.yaml": "data/start_target/tr_mb"

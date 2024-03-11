@@ -1,0 +1,24 @@
+#!/bin/bash
+
+
+# continuous_std_6
+# discrete_std_4
+# discrete_flipper_1
+action_mode='discrete_flipper_1'
+
+
+# benchmark_batten
+# benchmark_plum
+# benchmark_sup
+# benchmark_sdown
+asset_name=benchmark_batten
+
+
+
+~/.local/share/ov/pkg/isaac_sim-*/python.sh \
+    scripts/run_http_env.py \
+    task='LowerHier' \
+    headless=False \
+    asset="./assets/config/${asset_name}.yaml" \
+    task.env.actionMode="$action_mode" \
+

@@ -1,22 +1,30 @@
-name: benchmark_batten
 
 robot:
   path: assets/usd/pumbaa/*.usd
-  position: [0, 0, 0.2]
+  position: [0, 0, 0.35]
   orient: [0, 0, 0, 1]
   scale: [1, 1, 1]
 
 obstacle:
-  path: assets/usd/obstacle/cube.usd
-  position: [0, -4.5, 0]
-  orient: [1, 0, 0, 0]
-  scale: [0.2, 9, 0.2]
+
+  batten2:
+    path: assets/usd/obstacle/cube.usd
+    position: [ -2.5, -4.5, 0 ]
+    scale: [ 0.3, 9, 0.3 ]
+  batten3:
+    path: assets/usd/obstacle/cube.usd
+    position: [ 0, -4.5, 0 ]
+    scale: [ 0.25, 9, 0.25 ]
+  batten4:
+    path: assets/usd/obstacle/cube.usd
+    position: [ 2.5, -4.5, 0 ]
+    scale: [ 0.2, 9, 0.2 ]
 
   ground:
     path: assets/usd/obstacle/ground.usd
 
 map:
-  path: assets/map/benchmark_batten.map
+
   lower: [-11, -11, -0.1]
   upper: [11, 11, 2]
   cell_size: 0.05

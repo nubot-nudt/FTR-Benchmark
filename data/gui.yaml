@@ -1,0 +1,29 @@
+op:
+  action_mode: continuous_std_6
+  asset: /home/zhc/isaacsim_prj/pumbaa_task/assets/config/terrain_steps.yaml
+  checkpoint: ''
+  task: Benchmark
+  train: RlgamesSAC
+play:
+  action_mode: continuous_std_4
+  asset: /home/zhc/isaacsim_prj/pumbaa_task/assets/config/terrain_mutil_batten.yaml
+  checkpoint: /home/zhc/isaacsim_prj/pumbaa_task/runs/Curriculum_ContextQVecSAC_03/nn/last_Curriculum_ContextQVecSAC_03_ep_30000_rew_21.651134.pth
+  num_envs: 16
+  task: Horizontal
+  train: ContextQVecSAC
+python: ~/.local/share/ov/pkg/isaac_sim-*/python.sh
+start: true
+train:
+  action_mode: continuous_std_4
+  asset: ''
+  backup: false
+  checkpoint: ''
+  epoch: 30000
+  experiment: '04'
+  headless: true
+  horizon: 0
+  minibatch: 0
+  new: true
+  num_envs: 128
+  task: Curriculum
+  train: ContextQVecSAC

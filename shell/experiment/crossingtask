@@ -1,0 +1,15 @@
+#!/bin/bash
+
+~/.local/share/ov/pkg/isaac_sim-*/python.sh \
+    scripts/train_rlgames.py \
+    task='Crossing' \
+    train='RlgamesSAC' \
+    checkpoint='/home/zhc/isaacsim_prj/pumbaa_task/runs/Crossing_RlgamesSAC_mb/nn/last_Crossing_RlgamesSAC_mb_ep_6650_rew_31.809837.pth' \
+    task.asset='/home/zhc/isaacsim_prj/pumbaa_task/assets/config/experiment_stair337_down.yaml' \
+    num_envs=1 \
+    task.task.actionMode='continuous_std_4' \
+    test=True \
+    headless=False \
+    task.env.max_v=0.18 \
+    task.task.episodeLength=1000 \
+    task.env.follow_camera=True

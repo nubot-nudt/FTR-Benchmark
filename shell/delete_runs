@@ -1,0 +1,24 @@
+#!/bin/bash
+
+runs_dir='./runs'
+
+for d in $(ls $runs_dir)
+do
+  name=$d
+  for file in $(ls $runs_dir/$name/nn)
+  do
+    result=$(echo $file | grep -oE "ep_([0-9]+)_rew")
+    if [ $? -eq 0 ]; then
+      num=$(echo $result | cut -d '_' -f 2)
+
+      # delete
+      if ((num % 200 != 0)); then
+        t=$runs_dir/$name/nn/*ep_${num}_rew*
+        echo '[rm] ' $t
+        rm $t
+      fi
+
+    fi
+  done
+   # awk 'FS="_"{if ($2%500 != 0){ print $0} }'
+done

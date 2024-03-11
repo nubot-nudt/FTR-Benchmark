@@ -1,0 +1,16 @@
+#!/bin/bash
+
+task='Crossing'
+asset='./assets/config/terrain_stair.yaml' # benchmark_batten
+
+
+~/.local/share/ov/pkg/isaac_sim-*/python.sh \
+    scripts/run_experiments.py \
+    task="$task" \
+    train='QVecSAC'
+    task.asset="$asset" \
+    test=True \
+    rl_device=cpu \
+    sim_device=cpu \
+    headless=False \
+    task.task.actionMode='diff_steer_5'

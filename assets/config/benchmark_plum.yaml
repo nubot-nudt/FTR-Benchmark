@@ -1,0 +1,52 @@
+
+robot:
+  path: assets/usd/pumbaa/*.usd
+  position: [0, 0, 0.3]
+  orient: [0, 0, 0, 1]
+  scale: [1, 1, 1]
+
+obstacle:
+  o1:
+    path: assets/usd/obstacle/plum_plane.usd
+    position: [1.8, -1.0, 0]
+  o3:
+    path: assets/usd/obstacle/plum_plane.usd
+    position: [ 1.8, 1.0, 0 ]
+  o2:
+    path: assets/usd/obstacle/plum_plane.usd
+    position: [ 1.8, 0, 0 ]
+  o4:
+    path: assets/usd/obstacle/plum_plane.usd
+    position: [ 1.8, -2.0, 0 ]
+  o5:
+    path: assets/usd/obstacle/plum_plane.usd
+    position: [ 1.8, 2.0, 0 ]
+
+  o11:
+    path: assets/usd/obstacle/plum_plane.usd
+    position: [ -1.8, -1.0, 0 ]
+  o13:
+    path: assets/usd/obstacle/plum_plane.usd
+    position: [ -1.8, 1.0, 0 ]
+  o12:
+    path: assets/usd/obstacle/plum_plane.usd
+    position: [ -1.8, 0, 0 ]
+  o14:
+    path: assets/usd/obstacle/plum_plane.usd
+    position: [ -1.8, -2.0, 0 ]
+  o15:
+    path: assets/usd/obstacle/plum_plane.usd
+    position: [ -1.8, 2.0, 0 ]
+
+  ground:
+    path: assets/usd/obstacle/ground.usd
+
+map:
+
+  lower: [-11, -11, -0.1]
+  upper: [11, 11, 2]
+  cell_size: 0.05
+
+
+
+

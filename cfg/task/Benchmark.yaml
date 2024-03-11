@@ -1,95 +1,62 @@
 # used to create the object
+
+defaults:
+  - Pumbaa
+  - _self_
+
+
 name: Benchmark
 
-physics_engine: ${..physics_engine}
+task:
 
-asset: ${if:${..asset},${..asset},'assets/config/benchmark_batten.yaml'}
+  hidden_state_space:
+    ~
 
+  state_space:
+    height_maps: 105
+    robot_vels: 2
+    robot_flippers:
+      size: 4
+      scale: 3.14
+      clip: [ -1, 1 ]
+    robot_orients:
+      size: 2
+      scale: 3.14
+      clip: [ -1, 1 ]
+    target_directs:
+      size: 1
+      scale: 3.14
+      clip: [ -1, 1 ]
+    target_distances: 1
+    cmd_vels: 2
+    cmd_flippers:
+      size: 4
+      scale: 3.14
+      clip: [ -1, 1 ]
+
+  reward_coef:
+    end: 0.5
+    shutdown: 0.1
+    yaw: 0.1
+    roll_angle: 0.1
+    pitch_angle: 1e-3
+    flipper_force: 5e-5
+    action_rate: 1e-5
+    action_smoothness: 1e-5
+    angular_velocity: 0.1
+    angular_acceleration: 1e-3
+    stick_rear_flipper: 0.1
+    stick_baselink: 0.1
+
+  actionMode: continuous_std_4
+  episodeLength: 500
 
 env:
-  record_extras_info: False
-  rewardCoef:
-    - 1             # end
-    - 0.8           # distance
-    - 0.5           # yaw
-    - 0.5           # flipper_pos
-    - 0.5           # flipper_range
-    - 0.5           # stable
-    - 0.03           # contact
-  episodeLength: 600
-#  actionMode: discrete_std_5
-  actionMode: continuous_std_4
-  resetInfoMaps: data/reset_info_maps.yaml
+  wrapper: ~
 
-  numEnvs: ${resolve_default:2,${...num_envs}}
-  envSpacing: 0
-  resetDist: 3.0
-  maxEffort: 400.0
-
-  clipObservations: 5.0
-#  clipActions: 1.0
-  controlFrequencyInv: 5
+  max_v: 0.3
+  max_w: 0.5
+  flipper_dt: 4
 
 
-sim:
-  dt: 0.01
-  use_gpu_pipeline: ${eq:${...pipeline},"gpu"}
-  gravity: [0.0, 0.0, -9.81]
-  add_ground_plane: True
-  add_distant_light: True
-  use_flatcache: True
-  enable_scene_query_support: False
-  disable_contact_processing: False
 
-  # set to True if you use camera sensors in the environment
-  enable_cameras: False
-
-  default_physics_material:
-    static_friction: 1.0
-    dynamic_friction: 1.0
-    restitution: 0.0
-
-  physx:
-    worker_thread_count: ${....num_threads}
-    solver_type: ${....solver_type}
-    use_gpu: ${eq:${....sim_device},"gpu"} # set to False to run on CPU
-    solver_position_iteration_count: 4
-    solver_velocity_iteration_count: 0
-    contact_offset: 0.02
-    rest_offset: 0.001
-    bounce_threshold_velocity: 0.2
-    friction_offset_threshold: 0.04
-    friction_correlation_distance: 0.025
-    enable_sleeping: True
-    enable_stabilization: True
-    max_depenetration_velocity: 100.0
-
-    # GPU buffers
-    gpu_max_rigid_contact_count: 524288
-    gpu_max_rigid_patch_count: 81920
-    gpu_found_lost_pairs_capacity: 1024
-    gpu_found_lost_aggregate_pairs_capacity: 262144
-    gpu_total_aggregate_pairs_capacity: 1024
-    gpu_max_soft_body_contacts: 1048576
-    gpu_max_particle_contacts: 1048576
-    gpu_heap_capacity: 67108864
-    gpu_temp_buffer_capacity: 16777216
-    gpu_max_num_partitions: 8
-
-  Pumbaa:
-    # -1 to use default values
-    override_usd_defaults: False
-    enable_self_collisions: False
-    enable_gyroscopic_forces: True
-    # also in stage params
-    # per-actor
-    solver_position_iteration_count: 4
-    solver_velocity_iteration_count: 0
-    sleep_threshold: 0.005
-    stabilization_threshold: 0.001
-    # per-body
-    density: -1
-    max_depenetration_velocity: 100.0
-    # per-shape
-    contact_offset: 0.02
-    rest_offset: 0.001

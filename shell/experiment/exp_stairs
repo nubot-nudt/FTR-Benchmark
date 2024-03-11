@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source $PTASK_SETUP
+
+~/.local/share/ov/pkg/isaac_sim-*/python.sh \
+    scripts/run_experiments.py \
+    task='Experiment' \
+    task.asset='./assets/config/experiment_stairs.yaml'
+
+ptask-tools experiment_plot.py metrics latex

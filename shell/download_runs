@@ -1,0 +1,15 @@
+#!/bin/bash
+
+user=zhc
+ip="192.168.1.152"
+
+server_runs_dir="~/isaacsim_prj/pumbaa_task/runs"
+local_runs_dir=$(realpath .)/runs/$ip
+
+if ! [ -d "${local_runs_dir}" ]; then
+  mkdir ${local_runs_dir}
+fi
+
+scp -r $user@$ip:${server_runs_dir}/* ${local_runs_dir}/
+
+

@@ -1,0 +1,10 @@
+loguru
+requests
+pyyaml
+matplotlib
+pyqt5==5.14.1
+scipy
+gym
+textual
+pipetools
+reloading

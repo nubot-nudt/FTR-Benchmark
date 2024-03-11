@@ -1,6 +1,0 @@
-#!/bin/bash
-
-for item in $(echo -e 'PPO\nTRPO\nSAC\nDDPG\nTD3')
-do
-  ./shell/benchmark/train_args -a ${item} -s $1
-done

@@ -1,0 +1,31 @@
+# used to create the object
+
+defaults:
+  - Horizontal
+  - _self_
+
+name: Experiment
+
+asset: './assets/config/experiment_step40.yaml'
+
+task:
+  episodeLength: 2000
+  actionMode: continuous_std_4  #  - continuous_std_4  - continuous_std_6  - discrete_std_4  - diff_steer_5
+
+experiment:
+  epoch: 3
+  rlgames:
+    runs_dir: runs/Curriculum_ContextQVecSAC_04
+    epoch: -1
+
+#  http: ~
+
+env:
+  wrapper: ~
+
+  max_v: 0.2
+  max_w: 0.5
+  flipper_dt: 4
+
+  follow_camera: True
+

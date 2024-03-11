@@ -1,0 +1,39 @@
+
+robot:
+  path: assets/usd/pumbaa/*.usd
+  position: [0, 0, 0.7]
+  orient: [0, 0, 0, 1]
+  scale: [1, 1, 1]
+
+
+terrain:
+  t1:
+    position: [20, 20, 0]
+    orient: [ 0, 0, 0, 1 ]
+    base_config:
+      terrain_width: 40
+      terrain_length: 40
+      horizontal_scale: 0.05
+      vertical_scale: 0.005
+      slope_threshold: 1
+    terrain_list:
+      - type_name: random_steps
+        min_width: 1
+        max_width: 2
+        min_length: 1
+        max_length: 2
+        min_height: 0.0
+        max_height: 0.4
+        step_num: 1000
+        seed: 1
+
+map:
+
+  lower: [-24, -24, -1]
+  upper: [24, 24, 3]
+  cell_size: 0.05
+
+camera:
+  position: [-5, 8, 8]
+  target: [-5, 0, 0]
+

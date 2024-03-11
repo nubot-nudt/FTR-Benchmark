@@ -6,11 +6,9 @@ task_name: ${task.name}
 experiment: ''
 
 # if set to positive integer, overrides the default number of environments
-num_envs: 128
+num_envs: 8
 
-horizon_length: ''
-
-minibatch_size: 1024
+minibatch_size: 16
 
 # seed - set to -1 to choose random seed
 seed: 40
@@ -52,11 +50,8 @@ debug: False
 # used to set checkpoint path
 checkpoint: ''
 
-# assets
-asset: ''
-
 # disables rendering
-headless: True
+headless: False
 # enables native livestream
 enable_livestream: False
 # timeout for MT script
@@ -68,10 +63,16 @@ wandb_name: ${train.params.config.name}
 wandb_entity: ''
 wandb_project: 'omniisaacgymenvs'
 
+# path to a kit app common
+kit_app: ''
+
+# Warp
+warp: False
+
 # set default task and default training config based on task
 defaults:
-  - task: Pumbaa
-  - train: ${task}PPO
+  - task: Crossing
+  - train: RlgamesPPO
   - hydra/job_logging: disabled
 
 # set the directory where the output files get saved

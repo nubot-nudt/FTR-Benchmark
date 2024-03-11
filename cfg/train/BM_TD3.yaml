@@ -11,8 +11,8 @@ params:
     name: ${resolve_default:Hier,${....experiment}}
 
   policy: # only works for MlpPolicy right now
-    pi_hid_sizes: [ 1024, 1024, 512 ]
-    vf_hid_sizes: [ 1024, 1024, 512 ]
+    pi_hid_sizes: [ 512, 512, 512 ]
+    vf_hid_sizes: [ 512, 512, 512 ]
     activation: elu # can be elu, relu, selu, crelu, lrelu, tanh, sigmoid
 
   learn:
@@ -24,11 +24,11 @@ params:
     test: ${resolve_default:False,${....test}}
 
     resume: 0
-    save_interval: 100 # check for potential saves every this many iterations
+    save_interval: 500 # check for potential saves every this many iterations
     print_log: True
 
     # rollout params
-    max_iterations: 2500
+    max_iterations: 6000
 
     # training params
     hidden_nodes: 512

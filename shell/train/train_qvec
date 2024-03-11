@@ -1,0 +1,29 @@
+#!/bin/bash
+
+experiment="QVec_steps"
+
+rm -rf runs/$experiment
+
+~/.local/share/ov/pkg/isaac_sim-*/python.sh \
+    scripts/train_rlgames.py \
+    task='Crossing' \
+    train='QVecSAC' \
+    num_envs=128 \
+    max_iterations=6000 \
+    headless=True \
+    rl_device='cuda:0' \
+    sim_device='cpu' \
+    pipeline='cpu' \
+    device_id=0 \
+    num_threads=10 \
+    task.sim.dt=0.008 \
+    task.asset='/home/zhc/isaacsim_prj/pumbaa_task/assets/config/terrain_steps.yaml' \
+    task.task.actionMode='continuous_std_6' \
+    test=False \
+    experiment=$experiment
+
+
+
+
+
+

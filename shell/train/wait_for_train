@@ -1,0 +1,13 @@
+#!/bin/bash
+
+source $PTASK_SETUP
+
+#keyword="scripts/train_rlgames.py"
+keyword="scripts/train_sarl.py"
+
+while pgrep -f $keyword >> /dev/null
+do
+  sleep 1
+done
+
+ptask-scripts train_benchmark.py ppo steps 40
