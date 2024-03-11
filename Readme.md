@@ -23,6 +23,19 @@ The flipper tracked robots have the capability to learn in various terrains. Con
 
 Eventually, our experiments demonstrate that RL can facilitate the robots to achieve some remarkable performance on such challenging tasks, enabling the agent to learn the optimal obstacle-navigation strategies within the environment. And there is still some room for improvement and more difficult tasks for future work.
 
+## Tasks Design
+| Task Name | Description | Demo     |
+|  :----:  | :----:  | :----:  |
+|Drive on Flat Terrain| Simulate the tracked robot traversing on flat terrain, with the successful completion of the task defined when the tracked robot reaches the specified position. | <img src="docs/images/tasks/flat_43.png" width="250"/>    |
+| Cross the Bar| Simulate the tracked robot crossing a long strip of terrain, with the successful completion of the task defined when the robot reaches the other side of the strip. | <img src="docs/images/tasks/batten_43.png" width="250"/>    |
+|Cross the Steps| Simulate the tracked robot ascending or descending a step higher than its own height, with the successful completion of the task defined when it reaches the next level of the step. | <img src="docs/images/tasks/steps_43.png" width="250"/>    |
+|Drive on Plum Pile| Simulate the tracked robot navigating on uneven terrain, with the successful completion of the task defined when the robot traverses through a set of obstacles, such as flower pots. | <img src="docs/images/tasks/plum_43.png" width="250"/>    |
+|Drive on Wave Terrain| Simulate the tracked robot navigating through uneven and asymmetric terrain, with the successful completion of the task defined when the robot traverses the asymmetric area. | <img src="docs/images/tasks/wave_43.png" width="250"/>    |
+|Up the Stairs| Simulate the tracked robot climbing stairs, with the successful completion of the task defined when the robot reaches the top of the stairs. | <img src="docs/images/tasks/sup_43.png" width="250"/>    |
+|Down the Stairs| Simulate the tracked robot descending stairs, with the successful completion of the task defined when the robot reaches the ground. | <img src="docs/images/tasks/sdown_43.png" width="250"/>    |
+|Mixed Terrain| Simulate the tracked robot navigating through various complex terrains, with the successful completion of the task defined when the robot reaches the specified endpoint. | <img src="docs/images/tasks/mixed_43.png" width="250"/>    |
+
+
 # Install
 
 ## Isaac Sim
