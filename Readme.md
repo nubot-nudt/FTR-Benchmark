@@ -99,9 +99,9 @@ isaac-python -m ptask_ftr task=benchmark/StepsUp train=FTR/SAC test=True checkpo
     <tr>
     <tr>
         <td><img src="docs/images/train_ftr/stepsup.gif" align="middle" width="700"/></td>
-        <td><img src="docs/image/benchmark/stepsup.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/benchmark/stepsup.png" align="middle" width="500"/></td>
         <td><img src="docs/images/train_ftr/stepsdown.gif" align="middle" width="700"/></td>
-        <td><img src="docs/image/benchmark/stepsdown.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/benchmark/stepsdown.png" align="middle" width="500"/></td>
     <tr>
     <tr>
         <th colspan="2">Cross the Uplifts</th>
@@ -109,9 +109,9 @@ isaac-python -m ptask_ftr task=benchmark/StepsUp train=FTR/SAC test=True checkpo
     <tr>
     <tr>
         <td><img src="docs/images/train_ftr/uplifts.gif" align="middle" width="700"/></td>
-        <td><img src="docs/image/benchmark/uplifts.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/benchmark/uplifts.png" align="middle" width="500"/></td>
         <td><img src="docs/images/train_ftr/unisteps.gif" align="middle" width="700"/></td>
-        <td><img src="docs/image/benchmark/unisteps.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/benchmark/unisteps.png" align="middle" width="500"/></td>
     <tr>
     <tr>
         <th colspan="2">Drive on Plum Piles</th>
@@ -119,9 +119,9 @@ isaac-python -m ptask_ftr task=benchmark/StepsUp train=FTR/SAC test=True checkpo
     <tr>
     <tr>
         <td><img src="docs/images/train_ftr/plumpiles.gif" align="middle" width="700"/></td>
-        <td><img src="docs/image/benchmark/plumpiles.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/benchmark/plumpiles.png" align="middle" width="500"/></td>
         <td><img src="docs/images/train_ftr/waves.gif" align="middle" width="700"/></td>
-        <td><img src="docs/image/benchmark/waves.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/benchmark/waves.png" align="middle" width="500"/></td>
     <tr>
     <tr>
         <th colspan="2">Cross the Rails</th>
@@ -129,9 +129,9 @@ isaac-python -m ptask_ftr task=benchmark/StepsUp train=FTR/SAC test=True checkpo
     <tr>
     <tr>
         <td><img src="docs/images/train_ftr/rails.gif" align="middle" width="700"/></td>
-        <td><img src="docs/image/benchmark/rails.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/benchmark/rails.png" align="middle" width="500"/></td>
         <td><img src="docs/images/train_ftr/stairsup.gif" align="middle" width="700"/></td>
-        <td><img src="docs/image/benchmark/stairsup.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/benchmark/stairsup.png" align="middle" width="500"/></td>
     <tr>
     <tr>
         <th colspan="2">Down the Stairs </th>
@@ -139,9 +139,9 @@ isaac-python -m ptask_ftr task=benchmark/StepsUp train=FTR/SAC test=True checkpo
     <tr>
     <tr>
         <td><img src="docs/images/train_ftr/stairsdown.gif" align="middle" width="700"/></td>
-        <td><img src="docs/image/benchmark/stairsdown.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/benchmark/stairsdown.png" align="middle" width="500"/></td>
         <td><img src="docs/images/train_ftr/mixed.gif" align="middle" width="700"/></td>
-        <td><img src="docs/image/benchmark/mixed.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/benchmark/mixed.png" align="middle" width="500"/></td>
     <tr>
 
     
