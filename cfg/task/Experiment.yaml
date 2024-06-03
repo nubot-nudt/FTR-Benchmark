@@ -1,7 +1,7 @@
 # used to create the object
 
 defaults:
-  - Horizontal
+  - Benchmark
   - _self_
 
 name: Experiment
@@ -9,23 +9,36 @@ name: Experiment
 asset: './assets/config/experiment_step40.yaml'
 
 task:
-  episodeLength: 2000
-  actionMode: continuous_std_4  #  - continuous_std_4  - continuous_std_6  - discrete_std_4  - diff_steer_5
+  record_done: True
+  record_reward_item: True
+  episodeLength: 1000
+#  actionMode: pos_4
+
 
 experiment:
-  epoch: 3
-  rlgames:
-    runs_dir: runs/Curriculum_ContextQVecSAC_04
-    epoch: -1
+  fixed_speed: 0.2
+  epoch: 10
+  executor_name: ftr
 
-#  http: ~
+  rlgames:
+
+    runs_dir: runs/Benchmark_SAC_test6
+    epoch: 600
+
+  http: ~
+
+  ftr:
+    checkpoint: runs_benchmarks/stepsdown/bm_stepsdown_td3_10/model_3000.pt
 
 env:
-  wrapper: ~
-
-  max_v: 0.2
-  max_w: 0.5
-  flipper_dt: 4
-
   follow_camera: True
+  wrapper:
+    - name: obs_unpack_dict
+    - name: map_noise
+      argv:
+        std: 0.5
+  pumbaa:
+    min_v: 0.2
+    max_v: 0.3
+    flipper_dt: 5
 

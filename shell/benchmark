@@ -1,5 +1,0 @@
-#!/bin/bash
-
-source ./shell/setup/ptask.sh
-
-ptask-scripts benchmark.py train $@

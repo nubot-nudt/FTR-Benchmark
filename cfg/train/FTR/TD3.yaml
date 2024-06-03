@@ -1,0 +1,57 @@
+params:
+  seed: ${...seed}
+
+  algo:
+    name: td3
+
+  load_checkpoint: ${if:${...checkpoint},True,False} # flag which sets whether to load the checkpoint
+  load_path: ${...checkpoint} # path to the checkpoint to load
+
+  config:
+    name: ${resolve_default:Hier,${....experiment}}
+    full_experiment_name: ${.name}
+
+  policy: # only works for MlpPolicy right now
+    pi_hid_sizes: [ 512, 512, 512 ]
+    vf_hid_sizes: [ 512, 512, 512 ]
+    activation: relu # can be elu, relu, selu, crelu, lrelu, tanh, sigmoid
+
+  learn:
+    agent_name: ${resolve_default:BM,${....experiment}}
+    full_experiment_name: ${....experiment}
+    device: ${....rl_device}
+    device_name: ${....rl_device}
+
+    test: ${resolve_default:False,${....test}}
+
+    resume: 0
+    save_interval: 500 # check for potential saves every this many iterations
+    print_log: True
+
+    # rollout params
+    max_iterations: 6000
+
+    # training params
+    hidden_nodes: 512
+    hidden_layer: 3
+
+    cliprange: 0.2
+    nsteps: 8
+    noptepochs: 5
+    nminibatches: 4 # this is per agent
+    replay_size: 5000
+    polyak: 0.995
+    learning_rate: 0.0001
+    max_grad_norm: 1
+    policy_delay: 2
+    gamma: 0.99
+    act_noise: 0.1
+    target_noise: 0.2
+    noise_clip: 0.5
+    reward_scale: 1
+    batch_size: 64
+
+    log_interval: 1
+    asymmetric: False
+
+

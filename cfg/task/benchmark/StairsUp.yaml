@@ -1,0 +1,28 @@
+
+defaults:
+  - Benchmark
+  - _self_
+
+
+asset: 'assets/config/curriculum_stairs_up.yaml'
+
+task:
+  episodeLength: 600
+  actionMode: con_del_4
+
+env:
+  pumbaa:
+    min_v: 0.2
+    max_v: 0.3
+    flipper_dt: 5
+
+    flipper_material_friction: 10
+    wheel_material_friction: 10
+
+    chassis_wheel_joint_damping: 1000
+    flipper_wheel_joint_damping: 1000
+    flipper_joint_stiffness: 1000
+
+sim:
+  pumbaa_wheel:
+    solver_position_iteration_count: 24

@@ -1,0 +1,12 @@
+
+defaults:
+  - Benchmark
+  - _self_
+
+
+asset: 'assets/config/curriculum_uplifts.yaml'
+
+task:
+  episodeLength: 400
+  actionMode: con_del_4
+

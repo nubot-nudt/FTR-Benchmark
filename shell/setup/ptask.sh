@@ -3,6 +3,8 @@ export PTASK_HOME="${PTASK_HOME:-$(pwd)}"
 export PTASK_HOME=$(realpath ${PTASK_HOME})
 
 export PTASK_SETUP=$PTASK_HOME/shell/setup/ptask.sh
+export ISAACSIM_HOME=`realpath ~/.local/share/ov/pkg/isaac_sim-2023.1.1`
+
 
 export PTASK_TOOLS=$PTASK_HOME/tools
 export PTASK_SCRIPTS=$PTASK_HOME/scripts
@@ -10,10 +12,11 @@ export PTASK_SHELL=$PTASK_HOME/shell
 export PTASK_SRC=$PTASK_HOME/src
 export PTASK_SERVER_HOST="127.0.0.1"
 
-ptask-kill-train() {
-  pkill -f "scripts/train_rlgames.py"
-  pkill -f "scripts/train_sarl.py"
-}
+if [ -z "$PYTHONPATH" ]; then
+  export PYTHONPATH=$PTASK_SRC
+else
+  export PYTHONPATH=$PTASK_SRC:$PYTHONPATH
+fi
 
 ptask-tensorboard() {
   ptask-home
@@ -21,7 +24,7 @@ ptask-tensorboard() {
 }
 
 isaac-sim() {
-  ~/.local/share/ov/pkg/isaac_sim*/isaac-sim.selector.sh $@
+  $ISAACSIM_HOME/isaac-sim.selector.sh $@
 }
 
 local-python() {
@@ -29,11 +32,21 @@ local-python() {
 }
 
 isaac-python() {
-  ~/.local/share/ov/pkg/isaac_sim*/python.sh $@
+  $PTASK_HOME/python.sh $@
+
+}
+
+isaac-pip() {
+    isaac-python -m pip $@
+}
+
+ptask-test() {
+  ptask-home
+  isaac-python -m pytest $@
 }
 
 isaac-home() {
-  cd ~/.local/share/ov/pkg/isaac_sim*/
+  cd $ISAACSIM_HOME
 }
 
 ptask-home() {

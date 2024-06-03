@@ -1,0 +1,24 @@
+
+defaults:
+  - Benchmark
+  - _self_
+
+
+asset: 'assets/config/curriculum_stairs_down.yaml'
+
+task:
+  constant:
+    pitch_threshold: 45
+
+
+  episodeLength: 500
+  actionMode: con_del_4
+
+env:
+  pumbaa:
+    min_v: 0.1
+    max_v: 0.2
+
+#sim:
+#  pumbaa_wheel:
+#    solver_position_iteration_count: 4

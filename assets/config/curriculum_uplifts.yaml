@@ -1,0 +1,43 @@
+
+robot:
+  path: assets/usd/pumbaa/*.usd
+  position: [0, 0, 1.5]
+  orient: [0, 0, 0, 1]
+  scale: [1, 1, 1]
+
+
+terrain:
+  t1:
+    position: [10, 10, 0.5]
+    orient: [ 0, 0, 0, 1 ]
+    base_config:
+      terrain_width: 20
+      terrain_length: 20
+      horizontal_scale: 0.01
+      vertical_scale: 0.005
+      slope_threshold: ~
+      mesh: assets/mesh/curriculum_uplifts.stl
+    terrain_list:
+      - type_name: curriculum_uplift
+        min_width: 0.2
+        max_width: 0.5
+        min_height: 0.2
+        max_height: 0.4
+        offset: 0.0
+        env_width: 1.2
+        env_length: 1.2
+        num_terrains: 6
+        num_levels: 6
+        border_size: 1.8
+        seed: 40
+
+map:
+  lower: [-12, -12, -1]
+  upper: [12, 12, 2]
+  cell_size: 0.05
+
+camera:
+  position: [0, 18, 12]
+  target: [0, -6, -4]
+
+

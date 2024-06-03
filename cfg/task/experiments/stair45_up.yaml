@@ -1,0 +1,21 @@
+defaults:
+  - Experiment
+  - _self_
+
+asset: 'assets/config/experiment_stair450_up.yaml'
+
+experiment:
+  fixed_speed: 0.25
+
+env:
+  pumbaa:
+    flipper_material_friction: 10
+    wheel_material_friction: 10
+
+    chassis_wheel_joint_damping: 1000
+    flipper_wheel_joint_damping: 1000
+    flipper_joint_stiffness: 1000
+
+sim:
+  pumbaa_wheel:
+    solver_position_iteration_count: 24

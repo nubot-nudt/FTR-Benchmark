@@ -1,0 +1,11 @@
+
+defaults:
+  - Benchmark
+  - _self_
+
+
+asset: 'assets/config/map_mixed.yaml'
+
+task:
+  episodeLength: 600
+  actionMode: con_del_4

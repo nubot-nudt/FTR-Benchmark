@@ -1,0 +1,11 @@
+
+defaults:
+  - Benchmark
+  - _self_
+
+
+asset: 'assets/config/curriculum_rails.yaml'
+
+task:
+  episodeLength: 500
+  actionMode: con_del_4

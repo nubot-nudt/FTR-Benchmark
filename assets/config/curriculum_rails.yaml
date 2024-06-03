@@ -1,0 +1,43 @@
+
+robot:
+  path: assets/usd/pumbaa/*.usd
+  position: [0, 0, 1.7]
+  orient: [0, 0, 0, 1]
+  scale: [1, 1, 1]
+
+
+terrain:
+  t1:
+    position: [15, 15, 0.5]
+    orient: [ 0, 0, 0, 1 ]
+    base_config:
+      terrain_width: 30
+      terrain_length: 30
+      horizontal_scale: 0.05
+      vertical_scale: 0.005
+      slope_threshold: 100
+    terrain_list:
+      - type_name: curriculum_rails
+        min_angle: 10
+        max_angle: 45
+        min_h: 0.2
+        max_h: 0.3
+
+        env_width: 2
+        env_length: 2
+        num_terrains: 7
+        num_levels: 7
+        border_size: 1.8
+        seed: 40
+
+map:
+
+  lower: [-17, -17, -1]
+  upper: [17, 17, 2]
+  cell_size: 0.05
+
+camera:
+  position: [0, 25, 15]
+  target: [0, -2, -5]
+
+

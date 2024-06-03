@@ -1,0 +1,8 @@
+defaults:
+  - Experiment
+  - _self_
+
+asset: 'assets/config/experiment_unistep30.yaml'
+
+experiment:
+  fixed_speed: 0.2

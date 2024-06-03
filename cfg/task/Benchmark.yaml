@@ -8,55 +8,53 @@ defaults:
 name: Benchmark
 
 task:
+  constant:
+    pitch_threshold: 30
 
   hidden_state_space:
     ~
 
   state_space:
-    height_maps: 105
-    robot_vels: 2
-    robot_flippers:
-      size: 4
-      scale: 3.14
-      clip: [ -1, 1 ]
+    height_maps: 105      # 这一项只能写数字，不能写为字典的形式
     robot_orients:
       size: 2
       scale: 3.14
       clip: [ -1, 1 ]
-    target_directs:
-      size: 1
-      scale: 3.14
-      clip: [ -1, 1 ]
-    target_distances: 1
-    cmd_vels: 2
-    cmd_flippers:
-      size: 4
-      scale: 3.14
-      clip: [ -1, 1 ]
+    robot_lin_x: 1
+    robot_angular_vels: 3
+    robot_flippers: 4
+
 
   reward_coef:
-    end: 0.5
-    shutdown: 0.1
-    yaw: 0.1
-    roll_angle: 0.1
-    pitch_angle: 1e-3
-    flipper_force: 5e-5
-    action_rate: 1e-5
-    action_smoothness: 1e-5
-    angular_velocity: 0.1
-    angular_acceleration: 1e-3
-    stick_rear_flipper: 0.1
-    stick_baselink: 0.1
+    end: 10
+    shutdown: 0.2
 
-  actionMode: continuous_std_4
+    robot_height: 2
+
+    excess_pitch: 0.5
+    roll_angle: 0.5
+
+    ang_vel_yz: 0.1
+    ang_vel_xz: 0.2
+    ang_vel_xy: 0.1
+
+
+  actionMode: con_del_4
   episodeLength: 500
+  record_done: False
+  record_reward_item: False
 
 env:
-  wrapper: ~
+  wrapper:
+    - name: obs_unpack_dict
+    - name: map_noise
+      argv:
+        std: 0.1
 
-  max_v: 0.3
-  max_w: 0.5
-  flipper_dt: 4
+  pumbaa:
+    min_v: 0.2
+    max_v: 0.3
+    flipper_dt: 5
 
 
 
