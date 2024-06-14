@@ -3,8 +3,6 @@ try:
     from .crossing_task import CrossingTask
     from .benchmark_task import BenchmarkTask
     from .experiment_task import ExperimentTask
-    from .curriclum_task import CurriculumTask
-    from .static_task import StaticTask
 except ImportError as e:
     import traceback
     _logger.warning(f'could not import RLTask: {e}')
