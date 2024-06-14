@@ -58,7 +58,7 @@ enable_livestream: False
 mt_timeout: 300
 
 # enables viewport recording
-enable_recording: True
+enable_recording: False
 # interval between video recordings (in steps)
 recording_interval: 2000
 # length of the recorded video (in steps)
