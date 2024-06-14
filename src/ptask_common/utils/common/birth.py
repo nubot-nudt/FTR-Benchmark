@@ -26,12 +26,11 @@ def load_birth_file_and_info(asset, birth_maps_file=default_birth_maps_file):
             birth_file = yaml.safe_load(maps_stream).get(asset, None)
 
     # 尝试从assets/birth找
-    if birth_file is None:
+    if 'birth_file' not in locals():
         if os.path.exists(f'assets/birth/{asset_name}'):
             birth_file = f'assets/birth/{asset_name}'
 
-
-    if birth_file is not None:
+    if 'birth_file' in locals():
         # 找到了
         with open(birth_file, 'rb') as f:
             birth_info = pickle.load(f)
