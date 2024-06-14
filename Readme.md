@@ -73,7 +73,7 @@ isaac-pip install -r ptask_requirements.txt
 To start training, you can execute the following code
 
 ~~~shell
-isaac-python -m ptask_ftr task=benchmark/StepsUp train=FTR/SAC headless=True num_envs=2 experiment='StepUp_SAC' rl_device='cuda:0' sim_device=cpu
+isaac-python -m ptask_ftr task=benchmark/StepsUp train=FTR/SAC headless=True num_envs=2 experiment='runs/StepUp_SAC' rl_device='cuda:0' sim_device=cpu
 ~~~
 
 If you want to test the training results, you can use the following command
