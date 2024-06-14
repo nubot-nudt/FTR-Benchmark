@@ -1,15 +1,11 @@
 from loguru import logger
 
-from .wrap.hier_max_env import HierMaxEnv
-from .wrap.hier_weight_env import HierWeightEnv
 from .wrap.prepocess_wrapper import ObsUnpackDictWrapper
 from .regularization.bounded_rationality import SwitchingCostWrapper
 from .noise.map_noise import MapNoiseWrapper
 from .wrap.spread_reward_env import SpreadRewardWrapper
 
 _register_envs = {
-    'hier_max': HierMaxEnv,
-    'hier_weight': HierWeightEnv,
     'switch_cost': SwitchingCostWrapper,
     'obs_unpack_dict': ObsUnpackDictWrapper,
     'map_noise': MapNoiseWrapper,
