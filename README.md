@@ -94,9 +94,9 @@ If you want to test the training results, you can use the following command
 - Twin Delayed DDPG (TD3) ([Paper](https://arxiv.org/pdf/1802.09477.pdf), [Config](ftr_envs/tasks/crossing/agents/ftr_algo_td3_cfg.yaml))
 - Soft Actor-Critic (SAC) ([Paper](https://arxiv.org/pdf/1812.05905.pdf), [Config](ftr_envs/tasks/crossing/agents/ftr_algo_sac_cfg.yaml))
 - Deep Deterministic Policy Gradient (DDPG) ([Paper](https://arxiv.org/pdf/1509.02971.pdf), [Config](ftr_envs/tasks/crossing/agents/ftr_algo_ddpg_cfg.yaml))
-- Multi-Agent PPO (MAPPO)([Paper](https://arxiv.org/pdf/2103.01955, [Config](ftr_envs/tasks/crossing/agents/ftr_algo_mappo_cfg.yaml))
-- Herogeneous-Agent PPO (HAPPO)([Paper](https://arxiv.org/pdf/2304.09870, [Config](ftr_envs/tasks/crossing/agents/ftr_algo_happo_cfg.yaml))
-- Herogeneous-Agent TRPO (HATRPO)([Paper](https://arxiv.org/pdf/2304.09870, [Config](ftr_envs/tasks/crossing/agents/ftr_algo_hatrpo_cfg.yaml))
+- Multi-Agent PPO (MAPPO)([Paper](https://arxiv.org/pdf/2103.01955), [Config](ftr_envs/tasks/crossing/agents/ftr_algo_mappo_cfg.yaml))
+- Herogeneous-Agent PPO (HAPPO)([Paper](https://arxiv.org/pdf/2304.09870), [Config](ftr_envs/tasks/crossing/agents/ftr_algo_happo_cfg.yaml))
+- Herogeneous-Agent TRPO (HATRPO)([Paper](https://arxiv.org/pdf/2304.09870), [Config](ftr_envs/tasks/crossing/agents/ftr_algo_hatrpo_cfg.yaml))
 
 ## Enviroment Performance
 <table>
