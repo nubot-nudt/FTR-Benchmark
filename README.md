@@ -56,7 +56,7 @@ Since this project is built on Isaac Lab, it is essential to install Isaac Lab f
 
 ### Install dependencies
 
-Run the following commands to install the project dependenc
+Run the following commands to install the project dependencies:
 ~~~bash
 ~/.local/share/ov/pkg/isaac-sim-4.2.0/python.sh -m pip install -r requirements.txt
 ~~~
