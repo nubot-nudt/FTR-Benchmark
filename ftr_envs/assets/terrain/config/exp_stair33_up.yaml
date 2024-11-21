@@ -1,0 +1,41 @@
+
+
+
+obstacles:
+  terrain:
+    path: usd/terrain_stairs_2.usd
+    position: [2, 1.5, 0]
+    orient: [0, 0, 0, 1]
+    scale: [1, 2.5, 1]
+  cube:
+    path: usd/cube.usd
+    position: [ -2.7, -1.5, 0 ]
+    scale: [ 3.5, 3, 1 ]
+  ground:
+    path: usd/ground.usd
+
+prim_config:
+  set_attrs:
+#    - prim_path: "terrain/terrain_stairs_2"
+#      attr_name: "physxArticulation:solverPositionIterationCount"
+#      value: 8
+    - prim_path: "terrain/terrain_stairs_2"
+      attr_name: "physxArticulation:solverVelocityIterationCount"
+      value: 0
+    - prim_path: "ground/ground/ground_SLDPRT"
+      attr_name: "physxArticulation:solverVelocityIterationCount"
+      value: 0
+
+map:
+  lower: [-11, -11, -0.1]
+  upper: [11, 11, 2]
+  cell_size: 0.05
+
+camera:
+  position: [0, 7, 2]
+  target: [0, 0, 0]
+
+task_info:
+  start_point: [3, 0, 0.13]
+  start_orient: [0, 0, 3.14]
+  target_point: [-0.5, 0, 1.14]

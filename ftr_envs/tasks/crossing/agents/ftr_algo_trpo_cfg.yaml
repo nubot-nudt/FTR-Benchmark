@@ -1,0 +1,62 @@
+params:
+  seed: ${.config.seed}
+
+  algo:
+    name: trpo
+
+  load_checkpoint: ${if:${.config.checkpoint},True,False} # flag which sets whether to load the checkpoint
+  load_path: ${.config.checkpoint} # path to the checkpoint to load
+
+  config:
+    seed: 10
+    name: ftr_algo_trpo
+    experiment: ${.name}
+    device: cuda:0
+    max_iterations: ""
+    checkpoint: ""
+    test: False
+
+  policy: # only works for MlpPolicy right now
+    pi_hid_sizes: [ 512, 512, 512 ]
+    vf_hid_sizes: [ 512, 512, 512 ]
+    activation: relu # can be elu, relu, selu, crelu, lrelu, tanh, sigmoid
+
+  learn:
+    agent_name: ${..config.name}
+    full_experiment_name: logs/${resolve_default:${..config.name},${..config.experiment}}
+    device: ${..config.device}
+    device_name: ${..config.device}
+
+    test: ${..config.test}
+
+    resume: 0
+    save_interval: 500 # check for potential saves every this many iterations
+    print_log: True
+
+    # rollout params
+    max_iterations: 6000
+
+    # training params
+    cliprange: 0.2
+    nsteps: 8
+    noptepochs: 5
+    nminibatches: 4 # this is per agent
+    max_grad_norm: 10
+    optim_stepsize: 1.e-3 # 3e-4 is default for single agent training with constant schedule
+    schedule: adaptive # could be adaptive or linear or fixed
+    gamma: 0.99
+    lam: 0.95
+    init_noise_std: 0.8
+    value_loss_coef: 2.0
+
+    # optimize the actor
+    damping: 0.1
+    cg_nsteps: 3
+    max_kl: 0.1
+    max_num_backtrack: 10
+    accept_ratio: 0.01
+    step_fraction: 0.1
+
+    log_interval: 1
+    asymmetric: False
+

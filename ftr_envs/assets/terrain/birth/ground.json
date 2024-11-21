@@ -1,0 +1,20 @@
+[
+    {
+        "start_point": [-2, 0, 0.58],
+        "start_orient": [0, 0, -3.14],
+        "target_point": [2, 0, 0.58],
+        "target_orient": [ 0, 0, 0]
+    },
+    {
+        "start_point": [0, 0, 0.58],
+        "start_orient": [0, 0, -3.14],
+        "target_point": [2, 0, 0.58],
+        "target_orient": [ 0, 0, 0]
+    },
+        {
+        "start_point": [2, 0, 0.58],
+        "start_orient": [0, 0, -3.14],
+        "target_point": [2, 0, 0.58],
+        "target_orient": [ 0, 0, 0]
+    }
+]

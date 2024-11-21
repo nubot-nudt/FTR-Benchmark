@@ -1,8 +1,0 @@
-defaults:
-  - Experiment
-  - _self_
-
-asset: 'assets/config/experiment_step40_down.yaml'
-
-experiment:
-  fixed_speed: 0.2
