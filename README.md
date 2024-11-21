@@ -29,8 +29,9 @@ We design multiple different terrains.
 |       Up the Stairs        |              Simulate the tracked vehicle climbing stairs. The width of each step of the stairs ranges from 0.2$m$ to 0.3$m$, and the slope of the stairs ranges from 20 to 45 degrees.               |  <img src="docs/images/tasks/stairsup.png" width="250"/>  |
 |      Down the Stairs       |             Simulate the tracked vehicle descending stairs. The width of each step of the stairs ranges from 0.2$m$ to 0.3$m$, and the slope of the stairs ranges from 20 to 45 degrees.              | <img src="docs/images/tasks/stairsdown.png" width="250"/> |
 |       Mixed Terrains       |             Simulate the tracked vehicle navigating through various complex terrains, with the successful completion of the task defined when the vehicle reaches the specified endpoint.             |   <img src="docs/images/tasks/mixed.png" width="250"/>    |
+
 Different flipper structures can be achieved by modifying the [configuration file](ftr_envs/tasks/crossing/ftr_env.py).
-[](./docs/images/tasks/flipper_type.png)
+![](./docs/images/framework.png)
 
 #### Multi Agent Tasks
 |    Task Name     |                                                        Description                                                        |                               Demo                               |
