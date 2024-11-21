@@ -92,6 +92,25 @@ If you want to test the training results, you can use the following command
   --play
 ~~~
 
+### Training Multi-Agent Tasks
+To start training, you can execute the following code
+~~~bash
+~/.local/share/ov/pkg/isaac-sim-4.2.0/python.sh scripts/skrl/train.py \ 
+  --task Ftr-Prey-v0 \
+  --num_envs 64 \
+  --algorithm IPPO \
+  --headless \
+  --seed 20 
+~~~
+
+### Training quadruped and humanoid robots
+~~~bash
+~/.local/share/ov/pkg/isaac-sim-4.2.0/python.sh scripts/skrl/train.py \ 
+  --task Isaac-Velocity-Rough-Anymal-D-v1 \
+  --num_envs 8
+~~~
+
+
 ## Supported RL algorithms are listed below:
 
 - Proximal Policy Optimization (PPO) ([Paper](https://arxiv.org/pdf/1707.06347.pdf), [Config](ftr_envs/tasks/crossing/agents/ftr_algo_ppo_cfg.yaml))
