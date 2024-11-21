@@ -31,9 +31,9 @@ Eventually, our experiments demonstrate that RL can facilitate the robots to ach
 #### Multi Agent Tasks
 |    Task Name     |                                                        Description                                                        |                               Demo                               |
 |:----------------:|:-------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------:|
-|    Push Cube     |                                  Three robots collaborate to push a heavy object forward                                  |   <img src="docs/images/marl_task/push_cube.png" width="250"/>   |
-| Transfer Objects |                     Three robots work together to transfer a platform carrying a heavy load forward.                      | <img src="docs/images/marl_task/transfer_cube.png" width="250"/> |
-|    Predation     |                            Three red robots collaborate to encircle and capture a green robot.                            |     <img src="docs/images/marl_task/prey.png" width="250"/>      |
+|    Push Cube     |                                  Three robots collaborate to push a heavy object forward                                  |   <img src="docs/images/marl_task/push_cube.png" width="150"/>   |
+| Transfer Objects |                     Three robots work together to transfer a platform carrying a heavy load forward.                      | <img src="docs/images/marl_task/transfer_cube.png" width="150"/> |
+|    Predation     |                            Three red robots collaborate to encircle and capture a green robot.                            |     <img src="docs/images/marl_task/prey.png" width="150"/>      |
 
 
 
