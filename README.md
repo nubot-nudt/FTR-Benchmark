@@ -103,50 +103,50 @@ If you want to test the training results, you can use the following command
         <th colspan="2">Down the Steps</th>
     <tr>
     <tr>
-        <td><img src="docs/images/train_ftr/stepsup.gif" align="middle" width="400"/></td>
-        <td><img src="docs/images/benchmark/stepsup.png" align="middle" width="500"/></td>
-        <td><img src="docs/images/train_ftr/stepsdown.gif" align="middle" width="400"/></td>
-        <td><img src="docs/images/benchmark/stepsdown.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/train_ftr/stepsup.gif" align="middle" width="200"/></td>
+        <td><img src="docs/images/benchmark/stepsup.png" align="middle" width="180"/></td>
+        <td><img src="docs/images/train_ftr/stepsdown.gif" align="middle" width="200"/></td>
+        <td><img src="docs/images/benchmark/stepsdown.png" align="middle" width="180"/></td>
     <tr>
     <tr>
         <th colspan="2">Cross the Uplifts</th>
         <th colspan="2">Through Single-sided Steps</th>
     <tr>
     <tr>
-        <td><img src="docs/images/train_ftr/uplifts.gif" align="middle" width="400"/></td>
-        <td><img src="docs/images/benchmark/uplifts.png" align="middle" width="500"/></td>
-        <td><img src="docs/images/train_ftr/unisteps.gif" align="middle" width="400"/></td>
-        <td><img src="docs/images/benchmark/unisteps.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/train_ftr/uplifts.gif" align="middle" width="200"/></td>
+        <td><img src="docs/images/benchmark/uplifts.png" align="middle" width="180"/></td>
+        <td><img src="docs/images/train_ftr/unisteps.gif" align="middle" width="200"/></td>
+        <td><img src="docs/images/benchmark/unisteps.png" align="middle" width="180"/></td>
     <tr>
     <tr>
         <th colspan="2">Drive on Plum Piles</th>
         <th colspan="2">Drive on Wave Terrains  </th>
     <tr>
     <tr>
-        <td><img src="docs/images/train_ftr/plumpiles.gif" align="middle" width="400"/></td>
-        <td><img src="docs/images/benchmark/plumpiles.png" align="middle" width="500"/></td>
-        <td><img src="docs/images/train_ftr/waves.gif" align="middle" width="400"/></td>
-        <td><img src="docs/images/benchmark/waves.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/train_ftr/plumpiles.gif" align="middle" width="200"/></td>
+        <td><img src="docs/images/benchmark/plumpiles.png" align="middle" width="180"/></td>
+        <td><img src="docs/images/train_ftr/waves.gif" align="middle" width="200"/></td>
+        <td><img src="docs/images/benchmark/waves.png" align="middle" width="180"/></td>
     <tr>
     <tr>
         <th colspan="2">Cross the Rails</th>
         <th colspan="2">Up the Stairs </th>
     <tr>
     <tr>
-        <td><img src="docs/images/train_ftr/rails.gif" align="middle" width="400"/></td>
-        <td><img src="docs/images/benchmark/rails.png" align="middle" width="500"/></td>
-        <td><img src="docs/images/train_ftr/stairsup.gif" align="middle" width="400"/></td>
-        <td><img src="docs/images/benchmark/stairsup.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/train_ftr/rails.gif" align="middle" width="200"/></td>
+        <td><img src="docs/images/benchmark/rails.png" align="middle" width="180"/></td>
+        <td><img src="docs/images/train_ftr/stairsup.gif" align="middle" width="200"/></td>
+        <td><img src="docs/images/benchmark/stairsup.png" align="middle" width="180"/></td>
     <tr>
     <tr>
         <th colspan="2">Down the Stairs </th>
         <th colspan="2">Mixed Terrains </th>
     <tr>
     <tr>
-        <td><img src="docs/images/train_ftr/stairsdown.gif" align="middle" width="400"/></td>
-        <td><img src="docs/images/benchmark/stairsdown.png" align="middle" width="500"/></td>
-        <td><img src="docs/images/train_ftr/mixed.gif" align="middle" width="400"/></td>
-        <td><img src="docs/images/benchmark/mixed.png" align="middle" width="500"/></td>
+        <td><img src="docs/images/train_ftr/stairsdown.gif" align="middle" width="200"/></td>
+        <td><img src="docs/images/benchmark/stairsdown.png" align="middle" width="180"/></td>
+        <td><img src="docs/images/train_ftr/mixed.gif" align="middle" width="200"/></td>
+        <td><img src="docs/images/benchmark/mixed.png" align="middle" width="180"/></td>
     <tr>
 
     
