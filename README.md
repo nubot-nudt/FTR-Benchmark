@@ -16,6 +16,7 @@ Eventually, our experiments demonstrate that RL can facilitate the robots to ach
 
 ### Tasks Design
 #### Obstacle Crossing Tasks
+We design multiple different terrains.
 |        Task Name           |                                                                                              Description                                                                                              |                           Demo                            |
 |:--------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------:|
 |        Up the Steps        |                                                   Simulate the tracked robot ascending steps. The height of the steps ranges from 0.2$m$ to 0.4$m$.                                                   |  <img src="docs/images/tasks/stepsup.png" width="250"/>   |
@@ -28,6 +29,8 @@ Eventually, our experiments demonstrate that RL can facilitate the robots to ach
 |       Up the Stairs        |              Simulate the tracked vehicle climbing stairs. The width of each step of the stairs ranges from 0.2$m$ to 0.3$m$, and the slope of the stairs ranges from 20 to 45 degrees.               |  <img src="docs/images/tasks/stairsup.png" width="250"/>  |
 |      Down the Stairs       |             Simulate the tracked vehicle descending stairs. The width of each step of the stairs ranges from 0.2$m$ to 0.3$m$, and the slope of the stairs ranges from 20 to 45 degrees.              | <img src="docs/images/tasks/stairsdown.png" width="250"/> |
 |       Mixed Terrains       |             Simulate the tracked vehicle navigating through various complex terrains, with the successful completion of the task defined when the vehicle reaches the specified endpoint.             |   <img src="docs/images/tasks/mixed.png" width="250"/>    |
+Different flipper structures can be achieved by modifying the [configuration file](ftr_envs/tasks/crossing/ftr_env.py).
+[](./docs/images/tasks/flipper_type.png)
 
 #### Multi Agent Tasks
 |    Task Name     |                                                        Description                                                        |                               Demo                               |
