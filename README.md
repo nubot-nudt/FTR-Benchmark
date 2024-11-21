@@ -13,6 +13,8 @@ The flipper tracked robots have the capability to learn in various terrains. Con
 
 Eventually, our experiments demonstrate that RL can facilitate the robots to achieve some remarkable performance on such challenging tasks, enabling the agent to learn the optimal obstacle-navigation strategies within the environment. And there is still some room for improvement and more difficult tasks for future work.
 
+![](./docs/Github.mp4)
+
 ### Tasks Design
 #### Obstacle Crossing Tasks
 |        Task Name           |                                                                                              Description                                                                                              |                           Demo                            |
