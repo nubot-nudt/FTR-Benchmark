@@ -31,7 +31,7 @@ We design multiple different terrains.
 |       Mixed Terrains       |             Simulate the tracked vehicle navigating through various complex terrains, with the successful completion of the task defined when the vehicle reaches the specified endpoint.             |   <img src="docs/images/tasks/mixed.png" width="250"/>    |
 
 Different flipper structures can be achieved by modifying the [configuration file](ftr_envs/tasks/crossing/ftr_env.py).
-![](./docs/images/framework.png)
+![](./docs/images/tasks/flipper_type.png)
 
 #### Multi Agent Tasks
 |    Task Name     |                                                        Description                                                        |                               Demo                               |
