@@ -5,7 +5,9 @@
 
 This project uses the NuBot rescue robot as the platform and obstacles crossing as the task. It builds a reinforcement learning training system in Isaac Sim and implements commonly used reinforcement learning algorithms.
 
-The core objective of FTR-Bench is to establish a learning framework that enables the articulated tracked robot to navigate obstacles in various terrains. Specifically, FTR-Bench consists of three primary components: the simulation, tasks, and learning algorithms.
+The major objective of FTR-Bench is to establish a learning framework that enables the articulated tracked robot to navigate obstacles in various terrains. Specifically, FTR-Bench consists of three primary components: the simulation, tasks, and learning algorithms.
+
+Due to GitHub's limitations on video and file sizes, we have made the videos related to this work and experiments available [Video](docs/GitHub.mp4) for easier access and viewing.
 
 ![](./docs/images/framework.png)
 
