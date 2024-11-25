@@ -180,7 +180,7 @@ To start training, you can execute the following code
     
 </table>
 
-Related experimental videos can be viewed：[Video](docs/GitHub.mp4)
+Related experimental videos can be viewed：[Video](https://1drv.ms/v/s!AqEztC_CwayMgQCnpW-n8urBkmBb)
 
 ## Research papers published using FTR-Bench
 
