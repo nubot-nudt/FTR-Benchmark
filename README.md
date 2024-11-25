@@ -9,7 +9,7 @@ The major objective of FTR-Bench is to establish a learning framework that enabl
 
 Due to GitHub's limitations on video and file sizes, we have made the videos related to this work and experiments available [Video](docs/GitHub.mp4) for easier access and viewing.
 
-![](./docs/images/framework.png)
+![](./docs/images/framework_00.png)
 
 The flipper tracked robots have the capability to learn in various terrains. Considering real-world rescue robot applications, we have created four types of terrains, including flat ground, obstacles, bollards, and stairs. The task defines the conditions and objectives that the tracked robots need to meet in each scenario.
 
