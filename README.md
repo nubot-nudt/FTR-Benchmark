@@ -125,6 +125,8 @@ To start training, you can execute the following code
 - Herogeneous-Agent TRPO (HATRPO)([Paper](https://arxiv.org/pdf/2304.09870), [Config](ftr_envs/tasks/crossing/agents/ftr_algo_hatrpo_cfg.yaml))
 
 ## Enviroment Performance
+
+### Obstacle Crossing Tasks
 <table>
     <tr>
         <th colspan="2">Up the Steps</th>
@@ -182,6 +184,22 @@ To start training, you can execute the following code
 
 Related experimental videos can be viewed：[Video](https://1drv.ms/v/s!AqEztC_CwayMgQCnpW-n8urBkmBb)
 
+### Multi-Agent Tasks
+<table>
+    <tr>
+        <td>Push Cube</td>
+        <td><img src="docs/images/marl_result/push_cube.png" align="middle" width="180"/></td>
+    </tr>
+    <tr>
+        <td>PTransfer Objects</td>
+        <td><img src="docs/images/marl_result/trans_cargo.png" align="middle" width="180"/></td>
+    </tr>
+    <tr>
+        <td>Predation</td>
+        <td><img src="docs/images/marl_result/prey.png" align="middle" width="180"/></td>
+    </tr>
+</table>
+
 ## Research papers published using FTR-Bench
 
 <details open>
@@ -191,5 +209,4 @@ Related experimental videos can be viewed：[Video](https://1drv.ms/v/s!AqEztC_C
   - [Geometry-Based Flipper Motion Planning for Articulated Tracked Robots Traversing Rough Terrain in Real-time](https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22236): Journal of Field Robotics, 2023,  https://doi.org/10.1002/rob.22236.
   - [Deep Reinforcement Learning for Flipper Control of Tracked Robots](https://arxiv.org/abs/2306.10352): ArXiv 2023, https://doi.org/10.48550/arXiv.2306.10352.
 </details>
-
 
