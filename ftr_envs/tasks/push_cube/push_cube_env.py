@@ -30,7 +30,7 @@ from omni.isaac.lab.terrains.terrain_generator_cfg import TerrainGeneratorCfg
 from omni.isaac.lab.utils import configclass
 
 from ftr_envs.assets.articulation.ftr import FtrWheelArticulation
-from ftr_envs.assets.ftr import FTR_CFG
+from ftr_envs.assets.ftr import FTR_CFG, FTR_SIM_CFG
 
 ROUGH_TERRAINS_CFG = TerrainGeneratorCfg(
     size=(3.0, 3.0),
@@ -60,7 +60,7 @@ class PushCubeEnvCfg(DirectMARLEnvCfg):
     num_states = -1
 
     # simulation
-    sim: SimulationCfg = SimulationCfg(dt=1 / 100, render_interval=decimation)
+    sim: SimulationCfg = SimulationCfg(dt=0.01, render_interval=decimation)
 
     # robot
     left_robot: ArticulationCfg = FTR_CFG.replace(prim_path="/World/envs/env_.*/left_robot")
@@ -125,6 +125,11 @@ class PushCubeEnvCfg(DirectMARLEnvCfg):
         ),
         init_state=RigidObjectCfg.InitialStateCfg(),
     )
+
+    # def __post_init__(self):
+    #     super().__post_init__()
+    #     self.sim.physx.max_position_iteration_count = 8
+    #     self.sim.physx.min_velocity_iteration_count = 4
 
 
 class PushCubeEnv(DirectMARLEnv):

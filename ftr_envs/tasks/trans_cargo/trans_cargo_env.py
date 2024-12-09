@@ -30,7 +30,7 @@ from omni.isaac.lab.terrains.terrain_generator_cfg import TerrainGeneratorCfg
 from omni.isaac.lab.utils import configclass
 
 from ftr_envs.assets.articulation.ftr import FtrWheelArticulation
-from ftr_envs.assets.ftr import FTR_CFG
+from ftr_envs.assets.ftr import FTR_CFG, FTR_SIM_CFG
 
 ROUGH_TERRAINS_CFG = TerrainGeneratorCfg(
     size=(3.0, 3.0),
@@ -63,7 +63,7 @@ class TransCargoEnvCfg(DirectMARLEnvCfg):
     num_states = -1
 
     # simulation
-    sim: SimulationCfg = SimulationCfg(dt=1 / 100, render_interval=decimation)
+    sim: SimulationCfg = FTR_SIM_CFG
 
     # robot
     left_robot: ArticulationCfg = FTR_CFG.replace(prim_path="/World/envs/env_.*/left_robot")
