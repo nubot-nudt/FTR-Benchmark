@@ -1,2 +1,7 @@
 einops
 fire
+ruamel.yaml==0.17.4
+gym==0.23.1
+gymnasium==0.29.0
+pandas
+
